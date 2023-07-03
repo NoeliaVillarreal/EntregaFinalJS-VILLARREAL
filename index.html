@@ -2,27 +2,30 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>LOLA</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="shortcut icon" href="./Media/L.logo.png" type="image/x-icon">
+    <img src="./Media/Banner mid collection todo el pais (2).png" alt="Banner" width="100%">
+    <script src="./main.js"></script>
 </head>
 <body>
-    <h1>Bienvenido a Lola Stores Spain / ENTREGA 3</h1>
-  
-  <label for="nombre">Nombre:</label>
-  <input type="text" id="nombre">
-  <br>
-  <label for="fecha">Fecha:</label>
-  <input type="date" id="fecha">
-  <br>
-  <label for="hora">Hora:</label>
-  <input type="time" id="hora">
-  <br>
-  <button onclick="reservarTurno()">Reservar Turno</button>
-  
-  <h2>Turnos Reservados</h2>
-  <ul id="turnos"></ul>
-
-    <script src="./PreEntrega3.js"></script>
+    <h1>LOLA STORES</h1>
+    <div class="container">
+        <div class="row">
+            <!-- Productos-->
+            <main id="items" class="col-sm-8 row"></main>
+            <!-- Carrito -->
+            <aside class="col-sm-4">
+                <h2>Tu carrito de compra</h2>
+            <!-- Elementos del carrito -->
+                <ul id="carrito" class="list-group"></ul>
+                <hr>
+            <!-- Precio total -->
+                <p class="text-right">Total: <span id="total"></span>&euro;</p>
+                <button id="boton-vaciar" class="btn btn-danger">Vaciar</button>
+            </aside>
+        </div>
+    </div>
 </body>
 </html>

@@ -1,31 +1,31 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <title>LOLA</title>
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+        integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" href="./Media/L.logo.png" type="image/x-icon">
     <img src="./Media/Banner mid collection todo el pais (2).png" alt="Banner" width="100%">
-    <script src="./main.js"></script>
+
 </head>
+
 <body>
     <h1>LOLA STORES</h1>
-    <div class="container">
-        <div class="row">
-            <!-- Productos-->
-            <main id="items" class="col-sm-8 row"></main>
-            <!-- Carrito -->
-            <aside class="col-sm-4">
-                <h2>Tu carrito de compra</h2>
-            <!-- Elementos del carrito -->
-                <ul id="carrito" class="list-group"></ul>
-                <hr>
-            <!-- Precio total -->
-                <p class="text-right">Total: <span id="total"></span>&euro;</p>
-                <button id="boton-vaciar" class="btn btn-danger">Vaciar</button>
-            </aside>
+    <main class="items-main">
+        <div id="items" class="col-sm-8 row">
         </div>
-    </div>
+        <div id="container" class="container">
+        </div>
+        <p class="text-center p-2 mt-2">Total: <span id="total"></span>&euro;</p>
+        <div id="carrito" class="carrito">
+        </div>
+    </main>
+    <script src="./main.js"></script>
 </body>
+
 </html>
